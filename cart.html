@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Da Serra</title>
-        <script src="script/main.js"></script>
+        <script src="script/cart.js"></script>
         <link rel="stylesheet" href="style.css"> 
         <link rel="stylesheet" href="reset.css"> 
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
@@ -32,38 +32,37 @@
 
         </header>
 
-        <h2 id="title">Os melhores cafés do Brasil!</h2>
+        <h2 id="title">Seu carrinho!</h2>
         
         <!--Produtos-->
         
-        <section id="content">
+        <section id="cart-content">
            
-            <article class="item"> <img src="img/produto1.svg"></img>
-                <h3>Café Cerrado Mineiro</h3>
-                <p class="price">R$ 35,00</p>
-                <button class="bt-comprar">Comprar</button>
+            <article class="cart-item"> 
+                <img class='item-preview' src="img/produto1.svg"></img>
+                <div class='item-info'>
+                    <h3>Café Cerrado Mineiro</h3>
+                    <p class="price">R$ 35,00</p>
+                    <div class="quantity"> 
+                        <p>Quantity</p> 
+                        <input type="number" class="quantity-input" value='10' required>
+                    </div>
+                </div>
             </article>
 
-            <article class="item"> <img src="img/produto1.svg"></img>
-                <h3>Café Cerrado Mineiro</h3>
-                <p class="price">R$ 35,00</p>
-                <button class="bt-comprar">Comprar</button>
+            <article class="cart-item"> 
+                <img class='item-preview' src="img/produto1.svg"></img>
+                <div class='item-info'>
+                    <h3>Café Cerrado Mineiro</h3>
+                    <p class="price">R$ 35,00</p>
+                    <div class="quantity"> 
+                        <p>Quantity</p> 
+                        <input type="number" class="quantity-input" value='10' required>
+                    </div>
+                </div>
             </article>
 
-            <article class="item"> <img src="img/produto1.svg"></img>
-                <h3>Café Cerrado Mineiro</h3>
-                <p class="price">R$ 35,00</p>
-                <button class="bt-comprar">Comprar</button>
-            </article>
-            
-            <article class="item"> <img src="img/produto1.svg"></img>
-                <h3>Café Cerrado Mineiro</h3>
-                <p class="price">R$ 35,00</p>
-                <button class="bt-comprar">Comprar</button>
-            </article>
-            
-            
-            
+            <button class="bt-form" onclick="checkout()">Fechar compra</button> 
         </section>
 
     </body>
