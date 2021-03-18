@@ -12,7 +12,7 @@ a{
 }
 /*Estilizando menu e texto*/
 
-#tittle{
+#title{
     
     text-align: center;
     font-family: 'Fraunces', serif;
@@ -245,7 +245,7 @@ input[type=text]:focus{
     flex-direction: column;
     align-items: center;
 }
-#containerLogin #tittle{
+#containerLogin #title{
     margin-bottom: 32px;;
 }
 #containerLogin input{
@@ -297,3 +297,79 @@ input[type=text]:focus{
     cursor: pointer;
 
 }
+
+/* Estilizando carrinho */
+.cart-item{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 28px;
+    text-align: center;
+   
+}
+
+.cart-item h3{
+    
+    margin-top: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: var(--auxiliar-2);
+    
+}
+
+
+
+.item-info{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-bottom: 28px;
+    text-align: left;
+   
+}
+
+.quantity{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 54px;
+    text-align: left;
+   
+}
+
+.quantity-input{
+    width: 40px;   
+}
+
+#cart-content{
+
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+
+   background-color: var(--branco-auxiliar);
+   border-radius: 15px;
+   margin-bottom:100px;
+   padding-top: 100px;
+   padding-bottom: 100px;
+
+}
+
+
+
+.item-preview {
+
+    width: 100px;
+
+}
+
